@@ -2,7 +2,7 @@
 1) Keyboard operation of turtlebot robot in Gazebo
 2) Autonomous robotic exploration based on multiple rapidly-exploring randomized trees
 
-This is a ROS-1 (Melodic) project using C++
+This is a ROS-1 (Melodic) project using C++ and python3
 
 ENPM690 Spring 2022
 Section RO01
