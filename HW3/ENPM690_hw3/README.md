@@ -55,9 +55,14 @@ Set your environment variable to the model robot to be used in bashrc/,zshrc fil
 export TURTLEBOT3_MODEL=waffle_pi
 
 ```
-Terminal 1 (world): roslaunch ros_autonomous_slam turtlebot3_world.launch
-
-Terminal 2 (teleop): roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+Terminal 1 (world): 
+```
+roslaunch ros_autonomous_slam turtlebot3_world.launch
+```
+Terminal 2 (teleop): 
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
 
 ### Part 2) Obstacle avoidance based on sensors (LiDAR)
 
@@ -80,7 +85,9 @@ Keep this process running always and execute other commands in a different termi
 Terminal 2:
 ```
 roslaunch ros_autonomous_slam autonomous_explorer.launch
+```
 --OR--
+```
 roslaunch ros_autonomous_slam autonomous_explorer.launch explorer:=RRT
 ```
 
