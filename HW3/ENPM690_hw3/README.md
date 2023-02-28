@@ -2,7 +2,7 @@
 1) Keyboard operation of turtlebot robot in Gazebo
 2) Autonomous robotic exploration based on multiple rapidly-exploring randomized trees
 
-This is a ROS-1 (Melodic) project using C++ and python3
+This is a ROS-1 (Melodic) project using C++
 
 ENPM690 Spring 2022
 Section RO01
@@ -10,17 +10,30 @@ Section RO01
 Jerry Pittman, Jr. UID: 117707120
 jpittma1@umd.edu
 
-
 Based on previous work with Matreya Kulkarni (ENPM661 Spring 2022):
 Previous work Github Repo: https://github.com/jpittma1/ENPM661_Project5_RRT.git
-
 
 This Homework's Github repo: https://github.com/jpittma1/ENPM690.git
 
 > **You can see the [Towards Data Science Story of this Project](https://mohamedfazilrobotics.medium.com/ros-autonomous-slam-using-randomly-exploring-random-tree-rrt-37186f6e3568)**
 
-This is a ROS-1 (Melodic) project using C++
+#Install and dependencies:
+source /opt/ros/noetic/setup.bash
+mkdir -p ~/enpm690_ws/src
+cd ~/enpm690_ws/src
 
+#Clone this repository into the src directory of the workspace:
+git clone https://github.com/jpittma1/ENPM690.git HW3/ENPM690_hw3
+
+#Install dependencies:
+sudo apt install python3-rosdep
+sudo rosdep init
+rosdep update --include-eol-distros
+rosdep install --from-paths src -y --ignore-src
+
+Catkin build the workspace
+
+#How to Run/ Execute
 ### Part 1) Teleop control of robot in world
 
 Set your environment variable to the model robot to be used in bashrc/,zshrc file.
