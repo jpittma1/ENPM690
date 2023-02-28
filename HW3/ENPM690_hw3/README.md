@@ -15,28 +15,31 @@ Previous work Github Repo: https://github.com/jpittma1/ENPM661_Project5_RRT.git
 
 This Homework's Github repo: https://github.com/jpittma1/ENPM690.git
 
+### videos Are here:
+https://drive.google.com/drive/folders/1xbY_yPHkRcj-BtaGveC07KHgtYrARpMl
+
 > **You can see the [Towards Data Science Story of this Project](https://mohamedfazilrobotics.medium.com/ros-autonomous-slam-using-randomly-exploring-random-tree-rrt-37186f6e3568)**
 
 #Install:
-source /opt/ros/noetic/setup.bash
+'''source /opt/ros/noetic/setup.bash
 mkdir -p ~/enpm690_ws/src
-cd ~/enpm690_ws/src
+cd ~/enpm690_ws/src'''
 
-#Copy this repository (ENPM690_hw3) into the src directory of the workspace
+##Copy this repository (ENPM690_hw3) into the src directory of the workspace
 
-#Install dependencies:
-sudo apt install python3-rosdep
+##Install dependencies:
+'''sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update --include-eol-distros
-rosdep install --from-paths src -y --ignore-src
+rosdep install --from-paths src -y --ignore-src'''
 
 #Catkin build the workspace
-catkin build
+'''catkin build'''
 
 #Source the workspace
-~/enpm690_ws/devel/setup.bash
+'''~/enpm690_ws/devel/setup.bash'''
 
-#How to Run/ Execute....
+##How to Run/ Execute....
 ### Part 1) Teleop control of robot in world
 
 Set your environment variable to the model robot to be used in bashrc/,zshrc file.
@@ -104,3 +107,7 @@ The RVIZ Window shows the robot's local map construction using its Laser sensors
 ![Nav](media/2d_pose_button.png)
 - An GOAL point can be set in the RVIZ window itself using the **2D Nav Goal** option which will be available in the top window tab.This allows you to set a goal point in the map within the RVIZ environment, then the robot automaticals performs the path palnning and starts to move in its path.<br />
 ![Nav](media/2d_nav_goal_button.png)
+
+
+### videos Are here:
+https://drive.google.com/drive/folders/1xbY_yPHkRcj-BtaGveC07KHgtYrARpMl
