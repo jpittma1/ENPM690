@@ -21,23 +21,31 @@ https://drive.google.com/drive/folders/1xbY_yPHkRcj-BtaGveC07KHgtYrARpMl
 > **You can see the [Towards Data Science Story of this Project](https://mohamedfazilrobotics.medium.com/ros-autonomous-slam-using-randomly-exploring-random-tree-rrt-37186f6e3568)**
 
 #Install:
-```source /opt/ros/noetic/setup.bash
+```
+source /opt/ros/noetic/setup.bash
 mkdir -p ~/enpm690_ws/src
-cd ~/enpm690_ws/src```
+cd ~/enpm690_ws/src
+```
 
 ##Copy this repository (ENPM690_hw3) into the src directory of the workspace
 
 ##Install dependencies:
-```sudo apt install python3-rosdep
+```
+sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update --include-eol-distros
-rosdep install --from-paths src -y --ignore-src```
+rosdep install --from-paths src -y --ignore-src
+```
 
 #Catkin build the workspace
-```catkin build```
+```
+catkin build
+```
 
 #Source the workspace
-```~/enpm690_ws/devel/setup.bash```
+```
+~/enpm690_ws/devel/setup.bash
+```
 
 ##How to Run/ Execute....
 ### Part 1) Teleop control of robot in world
